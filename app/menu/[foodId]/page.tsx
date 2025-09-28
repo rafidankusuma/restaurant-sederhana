@@ -1,21 +1,23 @@
-import { Metadata } from "next"
-import { Suspense } from "react"
-import FoodDetail from "@/components/food-detail"
+"use client";
+
+import { Metadata } from "next";
+import { Suspense } from "react";
+import FoodDetail from "@/components/food-detail";
 
 export const metadata: Metadata = {
-    title: "Food Detail"
-}
+  title: "Food Detail",
+};
 
 const FoodDetailPage = ({ params }: { params: { foodId: string } }) => {
-    const { foodId } = params; 
-    return (
-        <div className="mt-16">
-            <Suspense fallback={<p>Loading...</p>}>
-                <FoodDetail foodId={foodId} />
-            </Suspense>
+  const { foodId } = params;
 
-        </div>
-    )
-}
+  return (
+    <div className="mt-16">
+      <Suspense fallback={<p>Loading...</p>}>
+        <FoodDetail foodId={foodId} />
+      </Suspense>
+    </div>
+  );
+};
 
-export default FoodDetailPage
+export default FoodDetailPage;
