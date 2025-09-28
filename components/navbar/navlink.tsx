@@ -7,7 +7,7 @@ import { IoClose, IoMenu } from "react-icons/io5"
 import { useSession, signOut } from "next-auth/react";
 import clsx from "clsx";
 
-const navlink = () => {
+const Navlink = () => {
     const [open, setOpen] = useState(false);
     const { data: session } = useSession();
     return (
@@ -131,4 +131,4 @@ const navlink = () => {
     )
 }
 
-export default navlink
+export default Navlink
