@@ -25,7 +25,7 @@ const PaymentFailure = () => {
                         href="/myorder" 
                         className="px-12 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3"
                         >
-                            GO TO MY RESERVATION
+                            GO TO MY ORDER
                         </Link>
                     </div>
                 </div>
