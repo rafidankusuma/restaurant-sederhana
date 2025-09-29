@@ -13,7 +13,7 @@ const MenuPage = () => {
   return (
     <div>
         <HeaderSection 
-        title="Foods & Drinks" 
+        title="Foods" 
         subTitle="Lorem ipsum dolor sit amet."
         />
         <div className="mt-10 px-4">
