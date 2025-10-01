@@ -13,7 +13,7 @@ const card = ({food}: {food: Food}) => {
         </div>
         <div className="p-8">
             <h4 className="text-2xl font-medium">
-                <Link href={`/food/${food.id}`} className="hover:text-gray-800 transition duration-150">{food.name}</Link>
+                <Link href={`/menu/${food.id}`} className="hover:text-gray-800 transition duration-150">{food.name}</Link>
             </h4>
             <h4 className="text-2xl mb-7">
                 <span className="font-semibold text-gray-600">{formatCurrency(food.price)}</span>
